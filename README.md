@@ -6,7 +6,7 @@
 1. Создать папку /local/modules/ylab.orm и поместить туда все файлы.
 2. Установите зависимости composer
 3. В административном интерфейсе установите модуль.
-4. Для получения подсказок IDE, сделайте аннотацию классов:
+4. Для получения подсказок IDE, сделайте аннотацию классов:  
 ```
 cd bitrix
 php bitrix.php orm:annotate -m ylab.orm
@@ -26,7 +26,7 @@ php bitrix.php orm:annotate -m ylab.orm
 5. Работайте с вашим классом, как с обычной ORM сущностью битрикса
 
 # Примеры использования
-Примеры будуь использовать пространство имён модуля
+Примеры будут использовать пространство имён модуля
 `mycompany.mymodule`.
 ## Работа с элементами инфоблока
  Как пример, будем использовать инфоблок "Новости", у которого
@@ -263,4 +263,4 @@ foreach ($oNewsCollection->getPropertyBindMultipleSectionsList() as $oPropertyCo
 [PlantUML](https://plugins.jetbrains.com/plugin/7017-plantuml-integration),
 [Graphviz](https://graphviz.gitlab.io/download/) и в
 `diagrams/constants.puml` установите значение константы ROOT -
-абсолютный путь к папке /diagrams
+абсолютный путь к папке `/diagrams`
