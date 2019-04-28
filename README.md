@@ -83,7 +83,7 @@ php bitrix.php orm:annotate -m mycompany.mymodule
 Теперь вы можете работать с элементами инфоблока "Новости", используя
 ваш ORM класс. В примерах отсутствуют проверки на наличие значений в
 свойствах элементов для большей наглядности. Убедитесь, что все свойства
-в элеменах с которыми вы работаете заполнены.  
+в элементах с которыми вы работаете заполнены.
 ### Работа с одним элементом инфоблока
 ```php
 use Mycompany\Mymodule\Iblock\News\NewsElementTable;
@@ -108,7 +108,7 @@ foreach ($oNews->getPropertyPicsNews()->getFileList() as $oFile) {
 }
 ```
 Если нужно получить ID всех файлов, указанных в свойстве PICS_NEWS, то
-можно их получить так
+можно их получить сразу из таблицы b_iblock_element_property
 ```php
 $oNews->fillPropertyPicsNews()->getValueList();
 ```
@@ -258,10 +258,9 @@ foreach ($oNewsCollection->getPropertyBindMultipleSectionsList() as $oPropertyCo
 }
 ```
 # Диаграммы классов
-Все диаграммы находятся в `/diagrams`. Если вы используете PhpStorm, вы
-можете установить плагин
-[PlantUML](https://plugins.jetbrains.com/plugin/7017-plantuml-integration)
-и просматривать их интерактивно. Установите плагин,
+Все диаграммы находятся в `/diagrams`. Если вы используете PhpStorm вы
+можете просматривать их в IDE. Для этого установите плагин
+[PlantUML](https://plugins.jetbrains.com/plugin/7017-plantuml-integration),
 [Graphviz](https://graphviz.gitlab.io/download/) и в
 `diagrams/constants.puml` установите значение константы ROOT -
 абсолютный путь к папке /diagrams
