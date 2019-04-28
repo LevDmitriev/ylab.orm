@@ -1,0 +1,10 @@
+@startuml
+!include ../constants.puml
+class FileTable extends DataManager
+{
+    !startsub METHODS
+    !includesub ROOT/main/DataManager.puml!METHODS
+    !endsub
+}
+
+@enduml

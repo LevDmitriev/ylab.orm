@@ -1,0 +1,11 @@
+@startuml
+!include ../../constants.puml
+
+class SectionTableRelationMapper extends RelationMapper
+{
+    !startsub METHODS
+    !includesub ROOT/factory/relation/ElementTableRelationMapper.puml!METHODS
+    !endsub
+}
+
+@enduml

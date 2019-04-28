@@ -1,0 +1,12 @@
+@startuml
+!include ../constants.puml
+
+class YlabSectionTable extends SectionTable
+{
+    !startsub METHODS
+    !includesub ROOT/iblock/ElementTable.puml!METHODS
+    !includesub ROOT/main/DataManager.puml!METHODS
+    !endsub
+}
+
+@enduml

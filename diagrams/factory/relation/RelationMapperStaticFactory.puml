@@ -1,0 +1,11 @@
+!include ../../constants.puml
+@startuml
+
+class RelationMapperStaticFactory
+{
+    -construct()
+    -getFactoryMap()
+    +{static} create(string $tableName): RelationMapper
+}
+
+@enduml

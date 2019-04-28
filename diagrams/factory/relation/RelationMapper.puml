@@ -1,0 +1,10 @@
+@startuml
+
+abstract class RelationMapper
+{
+    !startsub METHODS
+    {abstract} getRelations(): Relation[]
+    !endsub
+}
+
+@enduml

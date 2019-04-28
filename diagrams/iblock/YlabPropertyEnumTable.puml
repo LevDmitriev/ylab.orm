@@ -1,0 +1,12 @@
+@startuml
+!include ../constants.puml
+
+class YlabPropertyEnumTable extends PropertyEnumTable
+{
+    !startsub METHODS
+    !includesub ROOT/main/DataManager.puml!METHODS
+    !includesub ROOT/iblock/PropertyEnumTable.puml!METHODS
+    !endsub
+}
+
+@enduml

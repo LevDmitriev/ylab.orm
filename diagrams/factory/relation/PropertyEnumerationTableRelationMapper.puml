@@ -1,0 +1,11 @@
+@startuml
+!include ../../constants.puml
+
+class PropertyEnumerationTableRelationMapper extends RelationMapper
+{
+    !startsub METHODS
+    !includesub ROOT/factory/relation/ElementTableRelationMapper.puml!METHODS
+    !endsub
+}
+
+@enduml

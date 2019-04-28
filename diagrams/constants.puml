@@ -1,0 +1,3 @@
+@startuml
+!define ROOT C:\OSPanel\domains\bitrix-framework\bitrix\modules\ylab.orm\diagrams
+@enduml

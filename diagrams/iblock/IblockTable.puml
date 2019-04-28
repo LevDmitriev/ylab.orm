@@ -1,0 +1,11 @@
+@startuml
+!include ../constants.puml
+
+class IblockTable extends DataManager
+{
+    !startsub METHODS
+    !includesub ROOT/main/DataManager.puml!METHODS
+    !endsub
+}
+
+@enduml

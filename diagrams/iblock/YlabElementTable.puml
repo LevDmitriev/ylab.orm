@@ -1,0 +1,13 @@
+@startuml
+!include ../constants.puml
+
+class YlabElementTable extends ElementTable
+{
+    !startsub METHODS
+    !includesub ROOT/iblock/ElementTable.puml!METHODS
+    !includesub ROOT/main/DataManager.puml!METHODS
+    {static} getIblockId(): int
+    !endsub
+}
+
+@enduml

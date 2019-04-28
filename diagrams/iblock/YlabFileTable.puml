@@ -1,0 +1,12 @@
+@startuml
+!include ../constants.puml
+
+class YlabFileTable extends FileTable
+{
+    !startsub METHODS
+    !includesub ROOT/iblock/FileTable.puml!METHODS
+    !includesub ROOT/main/DataManager.puml!METHODS
+    !endsub
+}
+
+@enduml

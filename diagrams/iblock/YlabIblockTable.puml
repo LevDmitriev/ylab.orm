@@ -1,0 +1,12 @@
+@startuml
+!include ../constants.puml
+
+class YlabIblockTable extends IblockTable
+{
+    !startsub METHODS
+    !includesub ROOT/main/DataManager.puml!METHODS
+    !includesub ROOT/iblock/IblockTable.puml!METHODS
+    !endsub
+}
+
+@enduml

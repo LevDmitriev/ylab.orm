@@ -1,0 +1,19 @@
+@startuml
+!include constants.puml
+
+!include ROOT/main/DataManager.puml
+!include ROOT/iblock/ElementTable.puml
+!include ROOT/iblock/FileTable.puml
+!include ROOT/iblock/IblockTable.puml
+!include ROOT/iblock/PropertyTable.puml
+!include ROOT/iblock/PropertyEnumTable.puml
+!include ROOT/iblock/SectionTable.puml
+!include ROOT/iblock/YlabPropertyTable.puml
+!include ROOT/iblock/YlabElementPropertyTable.puml
+!include ROOT/iblock/YlabElementTable.puml
+!include ROOT/iblock/YlabFileTable.puml
+!include ROOT/iblock/YlabIblockTable.puml
+!include ROOT/iblock/YlabSectionTable.puml
+!include ROOT/iblock/YlabPropertyEnumTable.puml
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+!include ../../constants.puml
+
+class ElementTableRelationMapper extends RelationMapper
+{
+    !startsub METHODS
+    +getRelations(): ?Relation[]
+    !endsub
+}
+
+@enduml

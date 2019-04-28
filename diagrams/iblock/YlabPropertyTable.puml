@@ -1,0 +1,12 @@
+@startuml
+!include ../constants.puml
+
+class YlabPropertyTable extends PropertyTable
+{
+    !startsub METHODS
+    !includesub ROOT/main/DataManager.puml!METHODS
+    !includesub ROOT/iblock/PropertyTable.puml!METHODS
+    !endsub
+}
+
+@enduml

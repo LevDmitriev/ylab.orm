@@ -1,0 +1,21 @@
+@startuml
+!include constants.puml
+
+!include ROOT/iblock.puml
+!include ROOT/factoryRelation.puml
+
+YlabElementTable ..|> RelationMapperStaticFactory
+YlabFileTable ..|> RelationMapperStaticFactory
+YlabIblockTable ..|> RelationMapperStaticFactory
+YlabPropertyTable ..|> RelationMapperStaticFactory
+YlabPropertyEnumTable ..|> RelationMapperStaticFactory
+YlabSectionTable ..|> RelationMapperStaticFactory
+YlabElementPropertyTable ..|> RelationMapperStaticFactory
+
+note right of RelationMapperStaticFactory
+ Используется в методе <i>getMap</i>, чтобы по названию таблицы
+ создать объект <i>RelationMapper</i>, который в свою очередь берёт на себя
+ работу по формированию отношений у таблицы
+endnote
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+
+!include constants.puml
+!include ROOT/factory/relation/ElementPropertyTableRelationMapper.puml
+!include ROOT/factory/relation/ElementTableRelationMapper.puml
+!include ROOT/factory/relation/FileTableRelationMapper.puml
+!include ROOT/factory/relation/IblockTableRelationMapper.puml
+!include ROOT/factory/relation/PropertyEnumerationTableRelationMapper.puml
+!include ROOT/factory/relation/PropertyTableRelationMapper.puml
+!include ROOT/factory/relation/RelationMapper.puml
+!include ROOT/factory/relation/RelationMapperStaticFactory.puml
+!include ROOT/factory/relation/SectionTableRelationMapper.puml
+
+RelationMapperStaticFactory ..|> RelationMapper : Создаёт
+
+@enduml
