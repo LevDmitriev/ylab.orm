@@ -1,11 +1,14 @@
 <?php
 namespace Ylab\ORM\Iblock;
 
-\Bitrix\Main\Loader::includeModule('iblock');
-
 use Ylab\ORM\Factory\Relation\RelationMapperStaticFactory;
 use \Bitrix\Iblock\IblockTable;
 
+/**
+ * Class YlabIblockTable. Класс для работы с таблицей b_iblock
+ *
+ * @package Ylab\ORM\Iblock
+ */
 class YlabIblockTable extends IblockTable
 {
     /**

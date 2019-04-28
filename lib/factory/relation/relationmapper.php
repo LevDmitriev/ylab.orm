@@ -1,9 +1,13 @@
 <?php
-
 namespace Ylab\ORM\Factory\Relation;
 
 use Bitrix\Main\ORM\Fields\Relations\Relation;
 
+/**
+ * Class RelationMapper.
+ *
+ * @package Ylab\ORM\Factory\Relation
+ */
 abstract class RelationMapper
 {
     /**
@@ -11,5 +15,5 @@ abstract class RelationMapper
      *
      * @return Relation[]
      */
-    abstract function getRelations();
+    abstract public function getRelations();
 }

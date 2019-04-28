@@ -1,5 +1,4 @@
 <?php
-
 namespace Ylab\ORM\Iblock;
 
 use Bitrix\Main\Entity\Validator\Length;
@@ -7,7 +6,9 @@ use Bitrix\Main\ORM\Data\DataManager;
 use Ylab\ORM\Factory\Relation\RelationMapperStaticFactory;
 
 /**
- * Class YlabElementPropertyTable. Класс для работы с таблицей b_iblock_element_property
+ * Class YlabElementPropertyTable. Класс для работы с таблицей b_iblock_element_property.
+ * Т.к. в модуле инфоблоков нет ORM класса для работы с этой таблицей. Воспользовался автоматическим формированием
+ * ORM классов.
  *
  * @package Ylab\ORM\Iblock
  */
@@ -81,10 +82,12 @@ class YlabElementPropertyTable extends DataManager
     
         return $arMap;
     }
+    
     /**
      * Returns validators for DESCRIPTION field.
      *
      * @return array
+     * @throws \Bitrix\Main\ArgumentTypeException
      */
     public static function validateDescription()
     {

@@ -261,5 +261,7 @@ foreach ($oNewsCollection->getPropertyBindMultipleSectionsList() as $oPropertyCo
 Все диаграммы находятся в `/diagrams`. Если вы используете PhpStorm, вы
 можете установить плагин
 [PlantUML](https://plugins.jetbrains.com/plugin/7017-plantuml-integration)
-и просматривать их интерактивно (для корректной работы требуется также
-установить [Graphviz](https://graphviz.gitlab.io/download/))
+и просматривать их интерактивно. Установите плагин,
+[Graphviz](https://graphviz.gitlab.io/download/) и в
+`diagrams/constants.puml` установите значение константы ROOT -
+абсолютный путь к папке /diagrams

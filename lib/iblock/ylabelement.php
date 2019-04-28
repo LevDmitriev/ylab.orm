@@ -1,13 +1,9 @@
 <?php
-
 namespace Ylab\ORM\Iblock;
-
-\Bitrix\Main\Loader::includeModule('iblock');
 
 use \Bitrix\Iblock\ElementTable;
 use Bitrix\Iblock\EO_Property_Collection;
 use Bitrix\Iblock\PropertyTable;
-use Bitrix\Main\FileTable;
 use Bitrix\Main\ORM\Fields\Relations\OneToMany;
 use Bitrix\Main\ORM\Fields\Relations\Reference;
 use Bitrix\Main\ORM\Query\Join;
@@ -28,7 +24,7 @@ class YlabElementTable extends ElementTable
      */
     public static function getIblockId()
     {
-        return false; // Наследники переопределяют
+        return null; // Наследники переопределяют
     }
     
     /**

@@ -1,7 +1,5 @@
 <?php
-
 namespace Ylab\ORM\Factory\Relation;
-
 
 use Bitrix\Main\ORM\Fields\Relations\Reference;
 use Bitrix\Main\ORM\Query\Join;

@@ -1,7 +1,5 @@
 <?php
-
 namespace Ylab\ORM\Factory\Relation;
-
 
 use Bitrix\Iblock\EO_Property_Collection;
 use Bitrix\Iblock\PropertyTable;

@@ -1,5 +1,4 @@
 <?php
-
 namespace Ylab\ORM\Factory\Relation;
 
 use Bitrix\Iblock\EO_Property_Collection;
@@ -57,7 +56,8 @@ class ElementPropertyTableRelationMapper extends RelationMapper
             Join::on('this.VALUE', 'ref.ID')->where(
                 array_map(function ($id) { return ['ref.IBLOCK_ID', $id]; },$oIblockBindSectionCollection->getLinkIblockIdList())
             ));
-        // Привязка к таблице со значению спискоа
+        
+        // Привязка к таблице b_iblock_property_enum
         $arResult['ENUM'] = (new Reference('ENUM', YlabPropertyEnumTable::class,
             Join::on('this.VALUE_ENUM', 'ref.ID')->whereNotNull('this.VALUE_ENUM')
         ))->configureJoinType('inner');

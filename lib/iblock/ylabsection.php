@@ -1,11 +1,14 @@
 <?php
-
 namespace Ylab\ORM\Iblock;
 
-use Bitrix\Iblock\PropertyEnumerationTable;
 use Bitrix\Iblock\SectionTable;
 use Ylab\ORM\Factory\Relation\RelationMapperStaticFactory;
 
+/**
+ * Class YlabSectionTable. Класс для работы с таблицей b_iblock_section
+ *
+ * @package Ylab\ORM\Iblock
+ */
 abstract class YlabSectionTable extends SectionTable
 {
     /**

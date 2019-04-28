@@ -1,7 +1,5 @@
 <?php
-
 namespace Ylab\ORM\Factory\Relation;
-
 
 /**
  * Класс для формирования отношений таблицы b_iblock

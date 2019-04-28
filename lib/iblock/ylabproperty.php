@@ -1,11 +1,15 @@
 <?php
-
 namespace Ylab\ORM\Iblock;
 
 use Bitrix\Iblock\PropertyTable;
 use Ylab\ORM\Factory\Relation\RelationMapperStaticFactory;
 
-abstract class YlabPropertyTable extends PropertyTable
+/**
+ * Class YlabPropertyTable. Класс для работы с таблицей b_iblock_proeprty
+ *
+ * @package Ylab\ORM\Iblock
+ */
+class YlabPropertyTable extends PropertyTable
 {
     /**
      * @inheritdoc
