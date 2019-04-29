@@ -4,7 +4,8 @@
 
 # Установка
 1. Создать папку `/local/modules/ylab.orm` и поместить туда все файлы.
-2. Установите зависимости composer
+2. Установите зависимости composer(пока что composer нужен только для
+   автозагрузки классов)
 3. В административном интерфейсе установите модуль.
 4. Для получения подсказок IDE, сделайте аннотацию классов
 ```
@@ -56,7 +57,6 @@ use Ylab\ORM\Iblock\YlabElementTable;
 
 class NewsElementTable extends YlabElementTable
 {
-    
     /**
      * Получить ID инфоблока
      * 
@@ -264,3 +264,6 @@ foreach ($oNewsCollection->getPropertyBindMultipleSectionsList() as $oPropertyCo
 [Graphviz](https://graphviz.gitlab.io/download/) и в
 `diagrams/constants.puml` установите значение константы ROOT -
 абсолютный путь к папке `/diagrams`
+
+# Планы будущих обновлений
+- С выходом обновления ORM, реализовать в сущностях метод setDefaultScope

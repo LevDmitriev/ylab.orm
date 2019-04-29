@@ -28,55 +28,55 @@ class YlabElementPropertyTable extends DataManager
      */
     public static function getMap()
     {
-        $arMap = array(
-            'ID' => array(
+        $arMap = [
+            'ID' => [
                 'data_type' => 'integer',
                 'primary' => true,
                 'autocomplete' => true,
                 //'title' => Loc::getMessage('ELEMENT_PROPERTY_ENTITY_ID_FIELD'),
-            ),
-            'IBLOCK_PROPERTY_ID' => array(
+            ],
+            'IBLOCK_PROPERTY_ID' => [
                 'data_type' => 'integer',
                 'required' => true,
                 //'title' => Loc::getMessage('ELEMENT_PROPERTY_ENTITY_IBLOCK_PROPERTY_ID_FIELD'),
-            ),
-            'IBLOCK_ELEMENT_ID' => array(
+            ],
+            'IBLOCK_ELEMENT_ID' => [
                 'data_type' => 'integer',
                 'required' => true,
                 //'title' => Loc::getMessage('ELEMENT_PROPERTY_ENTITY_IBLOCK_ELEMENT_ID_FIELD'),
-            ),
-            'VALUE' => array(
+            ],
+            'VALUE' => [
                 'data_type' => 'text',
                 'required' => true,
                 //'title' => Loc::getMessage('ELEMENT_PROPERTY_ENTITY_VALUE_FIELD'),
-            ),
-            'VALUE_TYPE' => array(
+            ],
+            'VALUE_TYPE' => [
                 'data_type' => 'enum',
-                'values' => array('text', 'html'),
+                'values' => ['text', 'html'],
                 //'title' => Loc::getMessage('ELEMENT_PROPERTY_ENTITY_VALUE_TYPE_FIELD'),
-            ),
-            'VALUE_ENUM' => array(
+            ],
+            'VALUE_ENUM' => [
                 'data_type' => 'integer',
                 //'title' => Loc::getMessage('ELEMENT_PROPERTY_ENTITY_VALUE_ENUM_FIELD'),
-            ),
-            'VALUE_NUM' => array(
+            ],
+            'VALUE_NUM' => [
                 'data_type' => 'float',
                 //'title' => Loc::getMessage('ELEMENT_PROPERTY_ENTITY_VALUE_NUM_FIELD'),
-            ),
-            'DESCRIPTION' => array(
+            ],
+            'DESCRIPTION' => [
                 'data_type' => 'string',
-                'validation' => array(__CLASS__, 'validateDescription'),
+                'validation' => [__CLASS__, 'validateDescription'],
                 //'title' => Loc::getMessage('ELEMENT_PROPERTY_ENTITY_DESCRIPTION_FIELD'),
-            ),
-            'IBLOCK_ELEMENT' => array(
+            ],
+            'IBLOCK_ELEMENT' => [
                 'data_type' => 'Bitrix\Iblock\IblockElement',
-                'reference' => array('=this.IBLOCK_ELEMENT_ID' => 'ref.ID'),
-            ),
-            'IBLOCK_PROPERTY' => array(
+                'reference' => ['=this.IBLOCK_ELEMENT_ID' => 'ref.ID'],
+            ],
+            'IBLOCK_PROPERTY' => [
                 'data_type' => 'Bitrix\Iblock\IblockProperty',
-                'reference' => array('=this.IBLOCK_PROPERTY_ID' => 'ref.ID'),
-            ),
-        );
+                'reference' => ['=this.IBLOCK_PROPERTY_ID' => 'ref.ID'],
+            ],
+        ];
     
         $arMap = array_merge(RelationMapperStaticFactory::create(static::getTableName())->getRelations(), $arMap);
     

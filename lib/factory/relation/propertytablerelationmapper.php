@@ -12,13 +12,15 @@ use Ylab\ORM\Iblock\YlabIblockTable;
  */
 class PropertyTableRelationMapper extends RelationMapper
 {
+    /**
+     * @inheritdoc
+     */
     function getRelations()
     {
         $arResult = [];
-        $arMap['IBLOCK'] = (new Reference('IBLOCK', YlabIblockTable::class,
+        $arResult['IBLOCK'] = (new Reference('IBLOCK', YlabIblockTable::class,
             Join::on('this.IBLOCK_ID', 'ref.ID')))->configureJoinType('inner');
         
         return $arResult;
     }
-    
 }

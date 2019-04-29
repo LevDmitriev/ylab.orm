@@ -18,6 +18,9 @@ use Ylab\ORM\Main\YlabFileTable;
  */
 class ElementPropertyTableRelationMapper extends RelationMapper
 {
+    /**
+     * @inheritdoc
+     */
     public function getRelations()
     {
         $arResult = [];
@@ -33,7 +36,8 @@ class ElementPropertyTableRelationMapper extends RelationMapper
          * ID инфоблока
          */
         foreach ($oIblockPropCollection as $oIblockProp) {
-            $arResult[] = (new Reference('PRIVATE_ELEMENT_BY_PROPERTY_'.$oIblockProp->getCode(), YlabElementTable::class,
+            $arResult[] = (new Reference('PRIVATE_ELEMENT_BY_PROPERTY_' . $oIblockProp->getCode(),
+                YlabElementTable::class,
                 Join::on('this.IBLOCK_ELEMENT_ID', 'ref.ID')
                     ->where('this.IBLOCK_PROPERTY_ID', $oIblockProp->getId())
             ))->configureJoinType('inner');
@@ -72,5 +76,4 @@ class ElementPropertyTableRelationMapper extends RelationMapper
         
         return $arResult;
     }
-    
 }

@@ -8,11 +8,12 @@ namespace Ylab\ORM\Factory\Relation;
  */
 class IblockTableRelationMapper extends RelationMapper
 {
+    /**
+     * @inheritdoc
+     */
     function getRelations()
     {
-        $arResult = [];
-        
-        return $arResult;
+        return [];
     }
     
 }

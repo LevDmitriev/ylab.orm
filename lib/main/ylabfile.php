@@ -17,10 +17,6 @@ class YlabFileTable extends FileTable
      */
     public static function getMap()
     {
-        $arResult = [];
-    
-        $arResult = array_merge(RelationMapperStaticFactory::create(static::getTableName())->getRelations(), $arResult, parent::getMap());
-        
-        return $arResult;
+        return array_merge(RelationMapperStaticFactory::create(static::getTableName())->getRelations(), $arResult, parent::getMap());
     }
 }

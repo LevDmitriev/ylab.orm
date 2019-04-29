@@ -11,12 +11,14 @@ use Ylab\ORM\Iblock\YlabElementPropertyTable;
  */
 class ElementTableRelationMapper extends RelationMapper
 {
-    function getRelations()
+    /**
+     * @inheritdoc
+     */
+    public function getRelations()
     {
         $arResult = [];
         $arResult['PROPERTIES'] = new OneToMany('PROPERTIES', YlabElementPropertyTable::class, 'ELEMENT');
     
         return $arResult;
     }
-    
 }

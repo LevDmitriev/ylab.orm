@@ -28,9 +28,4 @@ class NewsElementTable extends YlabElementTable
         return EO_NewsElement::class;
     }
     
-    //public function setDefaultScope(Query $query)
-    //{
-    //    return $query->where('IBLOCK_ID', static::getIblockId());
-    //}
-    
 }
