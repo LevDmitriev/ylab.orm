@@ -3,7 +3,6 @@ namespace Ylab\ORM\Factory\Relation;
 
 use Bitrix\Iblock\EO_Property_Collection;
 use Bitrix\Iblock\PropertyTable;
-use Bitrix\Main\ORM\Fields\Relations\OneToMany;
 use Bitrix\Main\ORM\Fields\Relations\Reference;
 use Bitrix\Main\ORM\Query\Join;
 use Ylab\ORM\Iblock\YlabElementTable;

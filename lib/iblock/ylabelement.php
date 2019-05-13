@@ -18,7 +18,6 @@ use Ylab\ORM\Main\YlabFileTable;
  */
 class YlabElementTable extends ElementTable
 {
-    
     /**
      * @inheritdoc
      */
@@ -51,7 +50,7 @@ class YlabElementTable extends ElementTable
                         YlabFileTable::class,
                         Join::on('this.PROPERTIES.VALUE', 'ref.ID')->where('this.PROPERTIES.IBLOCK_PROPERTY_ID',$oIblockProp->getId())
                     ))->configureJoinType('inner');
-                } elseif ( PropertyTable::TYPE_LIST === $sPropertyType && !$isMultiple ) { // Свойство типа список с одиночным выбором
+                } elseif (PropertyTable::TYPE_LIST === $sPropertyType && !$isMultiple ) { // Свойство типа список с одиночным выбором
                     $arResult[] = (new Reference(
                         $sPropertyName,
                         YlabPropertyEnumTable::class,

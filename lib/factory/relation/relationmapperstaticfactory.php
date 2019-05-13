@@ -17,6 +17,9 @@ use Ylab\ORM\Iblock\YlabElementPropertyTable;
  */
 class RelationMapperStaticFactory
 {
+    /**
+     * Приватный конструктор, т.к. статическая фабрика не имеет экземпляров.
+     */
     private function __construct() { }
     
     /**

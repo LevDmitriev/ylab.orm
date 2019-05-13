@@ -15,7 +15,7 @@ class PropertyTableRelationMapper extends RelationMapper
     /**
      * @inheritdoc
      */
-    function getRelations()
+    public function getRelations()
     {
         $arResult = [];
         $arResult['IBLOCK'] = (new Reference('IBLOCK', YlabIblockTable::class,

@@ -8,11 +8,12 @@ namespace Ylab\ORM\Factory\Relation;
  */
 class PropertyEnumerationTableRelationMapper extends RelationMapper
 {
-    function getRelations()
+    /**
+     * @inheritdoc
+     */
+    public function getRelations()
     {
-        $arResult = [];
-        
-        return $arResult;
+        return [];
     }
     
 }

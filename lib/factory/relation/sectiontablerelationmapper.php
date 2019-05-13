@@ -9,7 +9,10 @@ namespace Ylab\ORM\Factory\Relation;
  */
 class SectionTableRelationMapper extends RelationMapper
 {
-    function getRelations()
+    /**
+     * @inheritdoc
+     */
+    public function getRelations()
     {
         $arResult = [];
         

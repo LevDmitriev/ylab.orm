@@ -16,7 +16,10 @@ use Ylab\ORM\Iblock\YlabElementTable;
  */
 class FileTableRelationMapper extends RelationMapper
 {
-    function getRelations()
+    /**
+     * @inheritdoc
+     */
+    public function getRelations()
     {
         $arResult = [];
         /** @var EO_Property_Collection $oIblockPropCollection Свойства инфоблоков с привязкой к файлам */

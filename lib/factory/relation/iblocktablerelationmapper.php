@@ -11,7 +11,7 @@ class IblockTableRelationMapper extends RelationMapper
     /**
      * @inheritdoc
      */
-    function getRelations()
+    public function getRelations()
     {
         return [];
     }
