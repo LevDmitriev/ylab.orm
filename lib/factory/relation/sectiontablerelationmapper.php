@@ -1,6 +1,6 @@
 <?php
-namespace Ylab\ORM\Factory\Relation;
 
+namespace Ylab\ORM\Factory\Relation;
 
 /**
  * Класс для формирования отношений таблицы b_iblock_section

@@ -73,34 +73,6 @@ class ylab_orm extends CModule
     }
     
     /**
-     * Удалить события модуля
-     * @return bool
-     */
-    public function UnInstallEvents()
-    {
-        return true;
-    }
-    
-    /**
-     * Установить файлы модуля
-     * @return bool
-     */
-    public function InstallFiles()
-    {
-        return true;
-    }
-    
-    /**
-     * Удалить файлы модуля
-     * @return bool
-     */
-    public function UnInstallFiles()
-    {
-        
-        return true;
-    }
-    
-    /**
      * Установить модуль.
      */
     public function DoInstall()

@@ -1,4 +1,5 @@
 <?php
+
 namespace Ylab\ORM\Iblock;
 
 use Bitrix\Main\Entity\Validator\Length;
@@ -77,9 +78,9 @@ class YlabElementPropertyTable extends DataManager
                 'reference' => ['=this.IBLOCK_PROPERTY_ID' => 'ref.ID'],
             ],
         ];
-    
+        
         $arMap = array_merge(RelationMapperStaticFactory::create(static::getTableName())->getRelations(), $arMap);
-    
+        
         return $arMap;
     }
     
@@ -91,8 +92,8 @@ class YlabElementPropertyTable extends DataManager
      */
     public static function validateDescription()
     {
-        return array(
+        return [
             new Length(null, 255),
-        );
+        ];
     }
 }

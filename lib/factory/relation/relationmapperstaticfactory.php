@@ -1,4 +1,5 @@
 <?php
+
 namespace Ylab\ORM\Factory\Relation;
 
 use Bitrix\Iblock\ElementTable;
@@ -24,6 +25,7 @@ class RelationMapperStaticFactory
     
     /**
      * Получить массив, описывающий какой класс отвечает за описание отношений какой таблицы
+     *
      * @return array
      */
     private static function getFactoryMap()

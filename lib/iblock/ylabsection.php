@@ -1,4 +1,5 @@
 <?php
+
 namespace Ylab\ORM\Iblock;
 
 use Bitrix\Iblock\SectionTable;
@@ -16,7 +17,8 @@ abstract class YlabSectionTable extends SectionTable
      */
     public static function getMap()
     {
-        $arMap = array_merge(RelationMapperStaticFactory::create(static::getTableName())->getRelations(), parent::getMap());
+        $arMap = array_merge(RelationMapperStaticFactory::create(static::getTableName())->getRelations(),
+            parent::getMap());
         
         return $arMap;
     }

@@ -1,4 +1,5 @@
 <?php
+
 namespace Ylab\ORM\Iblock;
 
 use Ylab\ORM\Factory\Relation\RelationMapperStaticFactory;
@@ -14,8 +15,10 @@ class YlabIblockTable extends IblockTable
     /**
      * @inheritdoc
      */
-    public static function getMap() {
-        $arMap = array_merge(RelationMapperStaticFactory::create(static::getTableName())->getRelations(), parent::getMap());
+    public static function getMap()
+    {
+        $arMap = array_merge(RelationMapperStaticFactory::create(static::getTableName())->getRelations(),
+            parent::getMap());
         
         return $arMap;
     }

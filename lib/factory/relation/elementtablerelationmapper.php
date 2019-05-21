@@ -1,4 +1,5 @@
 <?php
+
 namespace Ylab\ORM\Factory\Relation;
 
 use Bitrix\Main\ORM\Fields\Relations\OneToMany;
@@ -18,7 +19,7 @@ class ElementTableRelationMapper extends RelationMapper
     {
         $arResult = [];
         $arResult['PROPERTIES'] = new OneToMany('PROPERTIES', YlabElementPropertyTable::class, 'ELEMENT');
-    
+        
         return $arResult;
     }
 }

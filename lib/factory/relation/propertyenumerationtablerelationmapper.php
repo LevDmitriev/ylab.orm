@@ -1,4 +1,5 @@
 <?php
+
 namespace Ylab\ORM\Factory\Relation;
 
 /**

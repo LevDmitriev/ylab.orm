@@ -1,4 +1,5 @@
 <?php
+
 namespace Mycompany\Mymodule\Iblock\News;
 
 use Bitrix\Iblock\IblockTable;
@@ -24,7 +25,8 @@ class NewsElementTable extends YlabElementTable
     /**
      * @inheritdoc
      */
-    public static function getObjectClass() {
+    public static function getObjectClass()
+    {
         return EO_NewsElement::class;
     }
     
