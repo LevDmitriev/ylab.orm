@@ -14,9 +14,7 @@ class SectionTableRelationMapper extends RelationMapper
      */
     public function getRelations()
     {
-        $arResult = [];
-        
-        return $arResult;
+        return [];
     }
     
 }
